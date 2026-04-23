@@ -2,7 +2,6 @@ import streamlit as st
 
 st.set_page_config(page_title="My Portfolio", page_icon="😊", layout="centered")
 
-# ===== STYLE =====
 st.markdown(
     """
     <style>
@@ -23,11 +22,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ===== SESSION STATE =====
 if "page" not in st.session_state:
     st.session_state.page = "Home"
 
-# ===== NAVIGATION =====
 st.write("### Navigate")
 
 col1, col2, col3, col4, col5 = st.columns(5)
@@ -45,7 +42,6 @@ if col5.button("Contact"):
 
 st.divider()
 
-# ===== PAGES =====
 page = st.session_state.page
 
 if page == "Home":
@@ -53,9 +49,7 @@ if page == "Home":
     st.header("Hi, I'm Marichu Ramos")
     st.write("Aspiring Developer | Designer")
 
-    # ✅ FIXED IMAGE (resize + safe path)
-    st.image("C:/Users/STUDENT USER/Downloads/677282634_923335297190802_9207460396662242013_n.jpg",
-              caption="Be Passionate", width=300)
+    st.image("C:/Users/STUDENT USER/Downloads/677282634_923335297190802_9207460396662242013_n.jpg",caption="Be Passionate", width=300)
 
     st.info("Welcome to my portfolio! Explore my work and skills.")
 
