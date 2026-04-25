@@ -49,7 +49,7 @@ if page == "Home":
     st.header("Hi, I'm Marichu Ramos")
     st.write("Aspiring Developer | Designer")
 
-    st.image("C:/Users/STUDENT USER/Downloads/677282634_923335297190802_9207460396662242013_n.jpg",caption="Be Passionate", width=300)
+    st.image("Ramos_Marichu.jpeg",caption="Be Passionate", width=300)
 
     st.info("Welcome to my portfolio! Explore my work and skills.")
 
